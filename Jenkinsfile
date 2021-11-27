@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages {
-        stage('verify BRACNC-Sravan') {
+        stage('verify BRACNC-Sravangit') {
             steps {
 
             echo "$GIT_BRANCH"
