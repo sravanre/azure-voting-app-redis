@@ -13,6 +13,15 @@ pipeline{
                 sh(script: 'docker images -a')
             }
         }
+
+        stage(' docker run new containter'){
+            steps {
+                sh(script:"""
+                 docker run -it nginx
+                 uptime
+                """ )
+            }
+        }
     
     
 
