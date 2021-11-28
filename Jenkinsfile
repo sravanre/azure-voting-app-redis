@@ -17,7 +17,7 @@ pipeline{
         stage(' docker run new containter'){
             steps {
                 sh(script:"""
-                 docker run -it nginx
+                 docker container ps 
                  uptime
                 """ )
             }
